@@ -1,0 +1,488 @@
+body {
+  background-color: black !important;
+}
+/*letras*/
+#tattoo {
+    font-family: "Ballet", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#navbarNav{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 180%;
+}
+.navbar.navbar-expand-md.navbar-dark{
+  background-color: #000000 !important;
+
+
+}
+#miedo{
+  font-family: "Lacquer", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150%;
+}
+#miedo2{
+  font-family: "Lacquer", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 250%;
+  text-shadow: 2px 5px 2px red;
+}
+#texto{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+#texto2{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150%;
+}
+/*etiquetas generales*/
+a{
+  text-decoration: none !important;
+  color: white !important;
+}
+/*navbar*/
+.logo{
+    width: 100%;
+}
+.nav-link.active{
+  color: white !important;
+  text-decoration: underline;
+  text-shadow: 2px 2px 2px red;
+  font-size: 105%;
+
+}
+/*indice*/
+.contenedorindice {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgb(0, 0, 0)), 
+  url(fotos/PIEDRALAVES.jpg);
+  background-size: cover;
+  color: rgb(0, 0, 0);
+}
+
+.der {
+  display: flex;
+  justify-content: flex-end; 
+  text-align: center;
+}
+
+.jarfa {
+  width: 62%;
+  height: auto;
+  margin-right: 9%;
+  margin-top: 20%;
+  border-radius: 20px;
+}
+.disco{
+  width: 60%;
+  margin-top: 2%;
+}
+.subdisco{
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.icono{
+  width: 10%;
+}
+.izq{
+  width: 20%;
+  margin-left: 18%;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 55px;
+}
+.centro{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.titmiedo{
+  
+}
+.indicefoto{/*reescalado de figam*/
+ transform: scale(1.1); 
+}
+/*subindice*/
+.contenedorsubindice{
+background-color: black;
+background: linear-gradient(rgba(0, 0, 0, 0.397), rgb(0, 0, 0)), 
+url(iconos/puno-americano.png);
+color: white;
+display: block;
+margin: 0 auto;
+width: 70%;
+
+}
+.titsubindice{
+  text-align: center;
+  margin-bottom: 5%;
+  color: white  !important;
+}
+.psubindice{
+text-align: center;
+}
+/*footer*/
+footer{
+  color: white !important;
+  background-color: #000000;
+  border-top: 3px red solid;
+  margin-top: 10%;
+  text-align: center ;
+  margin-bottom: 0;
+}
+.col-md-4.webs{
+  display: flex;
+  flex-direction: column;
+}
+.enlacefooter{
+  color: red;
+}
+.enlacefooter:hover{
+  color: brown;
+}
+/*DISCOS*/
+.container-fluid.justify-content-center {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 820px; 
+  gap: 20px; /* Espaciado entre los elementos */
+}
+.nav-link.dropdown-toggle{
+color: red;
+}
+.nav-link.dropdown-toggle:hover{
+  color: red;
+}
+.nav-link.dropdown-toggle:active{
+  color: red !important;
+}
+.video-nav-container {
+  position: relative;
+  width: 100%;
+  height: 450px; /*tamaño video <----------*/
+  overflow: hidden;
+}
+
+.video-fondo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video al tamaño del contenedor */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Pone el video detrás del navbar */
+}
+.tit{
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: white  !important;
+}
+.contenedordiscos{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+}
+.enlacedisco{
+  font-family: "Lacquer", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150%;
+}
+.divdisco{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titdisco{
+  text-align: center;
+}
+.fechadisco{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-style: normal;
+    background-color: rgba(255, 0, 0, 0.257);
+    text-align: center;
+    width: 25%;
+  }
+.imgdisco{
+  width: 50%;
+  border-radius: 10px;
+}
+.page-container {
+  background-color: rgb(0, 0, 0) !important;
+  padding: 20px !important;
+}
+.page-link.active{
+  background-color: red !important;
+}
+.pagination-container .page-link {
+  background-color: rgb(0, 0, 0) !important;  /* Fondo de los botones */
+  color: rgb(255, 255, 255) !important;  /* Texto de los botones */
+  border: 1px solid rgba(255, 0, 0, 0.041) !important; /* Bordes blancos */
+}
+
+.pagination-container .page-link:hover {
+  background-color: rgb(255, 0, 0) !important; /* Cambia el color al pasar el mouse */
+  color: white !important;
+}
+.pagination-container .page-link.active{
+  background-color: red !important;
+}
+/*SUBDISCO*/
+.bodysubdisco{
+  /*METER UNA FOTO*/
+  background-size: cover;}
+.container.tema{
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: #00000000 !important;
+}
+.tema .card {
+  background-color: #353535;
+color: white;
+}
+.card-header{
+  background-color: rgb(80, 0, 0) !important;
+}
+.custom-card {
+}
+.discocompleto{
+  background-color: red;
+  padding: 1%;
+  border-radius: 20px;
+  font-family: "Lacquer", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 170%;
+}
+.discocompleto:hover{
+  background-color:rgb(255, 121, 121);
+}
+.card.mt-4.text-center.custom-card.cartadisco{
+  background-color:#666666 !important;
+width: 40%;
+
+}
+/*CONTACTO*/
+.bodycontacto{
+  background-color: #000000;
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgb(0, 0, 0)), 
+  url(fotos/team.webp);
+  background-size: cover;
+}
+.contenedorcontacto{
+  margin-top: 10%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.pcontacto{
+  color: white;
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+.formcontacto{
+  display: block;
+  margin: 0 auto;
+  color: white;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 130%;
+  font-style: normal;
+  width: 70%;
+  background-color: #0000008a;
+  border-radius: 20px;
+}
+.enviar{
+  width: 50%;
+  text-align: center;
+  background-color: red;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3%;
+  border: none;
+}
+.enviar:hover{
+  background-color: rgb(255, 121, 121);
+}
+.izqcontacto{
+}
+.video{
+  filter: contrast(150%);
+}
+.footer2{
+  margin-top: 500px;
+}
+/*CONCIERTOS*/
+.gradiante{
+  background: rgb(255,0,0);
+  background: radial-gradient(circle, rgb(150, 0, 0) 0%, rgba(0,0,0,1) 58%);
+}
+.container-fluid.mt-5.concis{
+}
+.custom-card.conci {
+  width: 50%;
+  display: flex;
+  align-items: stretch; 
+  margin-left: 25%;
+}
+.card-header.conci{
+  background-color: rgba(255, 255, 255, 0) !important;
+  color: #FF3F3F;
+}
+.card-body.conci{
+
+}
+.card-title{
+  margin-left: 2.5%;
+}
+.card{
+  background-color: rgb(224, 224, 224) !important;
+  border: none !important;
+margin-bottom: 40px;
+}
+.card-header{
+  background-color: none !important;
+}
+.precio{
+  color: #FF3F3F;
+  font-size: 150%;
+font-weight: bolder;
+  border-radius: 20px;
+  text-align: end;
+  margin: 5%;
+}
+.precio::after{
+  content: "€";
+}
+.img-container img {
+  width: auto;
+  size: cover;
+  margin: 0;
+  width: 85%;
+}
+.comprar{
+  background-color: #FF3F3F !important;
+  border: none !important;
+  width: auto;
+  float: right;
+  padding: 2% !important;
+}
+.comprar:hover{
+  background-color: #5f0000 !important;
+}
+.contenedorboton {
+  display: flex;
+  text-align: right !important;
+  justify-content: flex-end;
+  align-items: center; 
+}
+/*log*/
+.centra {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+
+.log {
+  background-color: #000000;
+  margin-top: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 90%;
+  max-width: 950px;
+}
+.formloguin{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  border-radius: 5px;
+  border: none;
+}
+.h1log{
+  text-align: center;
+}
+.izqlog{
+border-right: #FF3F3F solid;
+}
+.sublog{
+  width: 75%;
+}
+.derlog{
+color: white;
+display: flex;
+margin-left: 20%;
+}
+.sublog{
+color: white;
+text-align: center;
+}
+.aceptar{
+  margin-top: 5%;
+  border: none;
+  background-color: #FF3F3F;
+  color: white;
+}
+.aceptar:hover{
+  background-color: #5f0000;
+}
+/*RESPONSIVES Y DEMAS ------------HOME----LOG*/
+/*MONITORES*/
+@media screen and (min-width: 1025px) {
+
+}
+
+/*TABLETS*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*disco-subdisco*/
+.contenedordiscos{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.card.mt-4.text-center.custom-card.cartadisco{
+  background-color:#666666 !important;
+width: 60%;
+}
+}
+
+/*MOVILES*/
+@media screen and (max-width: 767px) {
+  /*disco-subdisco*/
+  .contenedordiscos{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .card.mt-4.text-center.custom-card.cartadisco{
+    background-color:#666666 !important;
+  width: 80%;
+  
+  }
+}
