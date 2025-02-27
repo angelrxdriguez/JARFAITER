@@ -498,11 +498,12 @@ width: 60%;
   }
   /*CONTACTO*/
   .bodycontacto{
-    background-image: url(fotos/PIEDRALAVES.jpg);
+    background-image: url(fotos/jarfaiter-recortado.jpg);
     background-size: auto;
   }
   .contenedorcontacto{
     display: flex;
+    margin-top: 30%;
   }
   .izqcontacto{
     display: none;
