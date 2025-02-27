@@ -504,6 +504,7 @@ width: 60%;
   .contenedorcontacto{
     display: flex;
     margin-top: 30%;
+    margin-left: 5%;
   }
   .izqcontacto{
     display: none;
