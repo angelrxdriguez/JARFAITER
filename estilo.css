@@ -454,6 +454,71 @@ text-align: center;
 .aceptar:hover{
   background-color: #5f0000;
 }
+/*PRENDAS--------------*/
+.prendas{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-left: 14%;
+}
+.prenda{
+background-color: #9f9f9f !important;
+color: rgb(255, 255, 255) !important;
+text-align: center;
+text-shadow: 1px 1px 3px red;
+width: 18rem;
+}
+.prenda:hover{
+  width: 18.4rem !important;
+  transition: 0.2s;
+}
+.titprenda{
+}
+/*SUBTIENDA*/
+.carousel.slide{
+ width: 50%;
+ margin-left: 50%;
+}
+.contenedorsubprenda{
+  background-color: #353535;
+  display: grid;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  grid-template-columns: repeat(2, 1fr);
+}
+.descripcion{
+  background-color: #666666;
+  color: white;
+  margin-right: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 140%;
+}
+.h1descripcion{
+  background-color: #666666;
+}
+.pdescripcion{
+text-align: left;
+padding: 2%;
+}
+.pdescripcion::before{
+  content: "·";
+}
+.contenedorpagar{
+  background-color: #FF3F3F;
+    margin-top: auto; 
+    text-align: center;
+    padding: 5px;
+}
+.contenedorpagar:hover{
+  background-color: #5f0000;
+}
+.pagar{
+}
 /*RESPONSIVES Y DEMAS ------------HOME----LOG*/
 /*MONITORES*/
 @media screen and (min-width: 1025px) {
