@@ -260,7 +260,7 @@ grid-template-columns: repeat(3,1fr);
   background-color: #00000000 !important;
 }
 .tema .card {
-  background-color: #353535;
+  background-color: black;
 color: white;
 }
 .card-header{
@@ -475,11 +475,11 @@ width: 18rem;
 }
 /*SUBTIENDA*/
 .carousel.slide{
- width: 50%;
- margin-left: 50%;
+ width: 80%;
+ margin-left: 20%;
 }
 .contenedorsubprenda{
-  background-color: #353535;
+  background-color: black;
   display: grid;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -519,6 +519,7 @@ padding: 2%;
 }
 .pagar{
 }
+
 /*RESPONSIVES Y DEMAS ------------HOME----LOG*/
 /*MONITORES*/
 @media screen and (min-width: 1025px) {
@@ -529,7 +530,6 @@ padding: 2%;
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /*disco-subdisco*/
 .contenedordiscos{
-  display: grid;
   grid-template-columns: repeat(2,1fr);
 }
 .card.mt-4.text-center.custom-card.cartadisco{
@@ -539,14 +539,45 @@ width: 60%;
 .izq{
   width: 60%;
 }
+
+/*prendas*/
+.prendas{
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 14%;
+}
+.carousel.slide{
+  width: 60%;
+  margin-left: 40%;
+ }
+ .contenedorsubprenda{
+  display: none;
+ }
+.contenedorsubprenda2{
+  background-color: black;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+}
+.descripcion2{
+  background-color: #666666;
+  color: white;
+  margin-right: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 140%;
+}
 }
 
 /*MOVILES*/
 @media screen and (max-width: 767px) {
   /*disco-subdisco*/
   .contenedordiscos{
-    display: grid;
     grid-template-columns: repeat(1,1fr);
+    margin-left: 0%;
   }
   .card.mt-4.text-center.custom-card.cartadisco{
     background-color:#666666 !important;
@@ -561,6 +592,36 @@ width: 60%;
   .der{
     display: none;
   }
+/*SUBPAGINA PRENDAS*/
+.prendas{
+  margin-left: 20%;
+  grid-template-columns: repeat(1,1fr);
+}
+.contenedorsubprenda{
+  display: none;
+}
+.contenedorsubprenda2{
+  background-color: black;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+}
+.carousel.slide{
+  width: 80%;
+  margin-left: 20%;
+ }
+.descripcion2{
+  background-color: #666666;
+  color: white;
+  margin-right: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 140%;
+}
   /*CONTACTO*/
   .bodycontacto{
     background-image: url(fotos/jarfaiter-recortado.jpg);
