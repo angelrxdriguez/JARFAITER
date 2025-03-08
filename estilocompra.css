@@ -1,24 +1,144 @@
 body{
-    background-color: black;
+    font-family: "Oswald", serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100% !important;
+    background-color: black !important;
 }
-.container {
-    width: 100%;
-    height: 50px;
-    background-color: #ddd;
+.centrar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    background-color: rgb(39, 39, 39);
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 25%;
+}
+.containerbarra{
+    width: 70%;
+    height: 20px;
+    background-color: #c3c3c3;
+    border-radius: 20px;
     position: relative;
     overflow: hidden;
+    
 }
 .bar {
     width: 0;
     height: 100%;
     background-color: red;
-    animation: expand 2s forwards;
+    animation: expandir 2s forwards;
+    border-radius: 20px;
 }
-@keyframes expand {
+.bar2{
+    width: 0;
+    height: 100%;
+    background-color: red;
+    animation: expandir2 2s forwards;
+    border-radius: 20px;
+}
+.bar3{
+    width: 0;
+    height: 100%;
+    background-color: red;
+    animation: expandir3 2s forwards;
+    border-radius: 20px;
+}
+.bar4{
+    width: 0;
+    height: 100%;
+    background-color: red;
+    animation: expandir4 2s forwards;
+    border-radius: 20px;
+}
+.container{
+    color: white;
+    margin-top: 0%;
+    width: 50% !important;
+}
+.subbarra{
+}
+.btn.btn-primary.w-100{
+}
+.logo{
+    width: 40%;
+}
+.card{
+    width: 90%;
+    margin: 5%;
+}
+.cesta{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#boton{
+
+}
+.gira{
+    margin-top: 8%;
+    width: 100px;
+    height: 100px;
+    animation: spin 5s linear forwards;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); opacity: 1; }
+    100% { transform: rotate(360deg); opacity: 0; }
+}
+.mensaje, #correoMensaje, #volverBtn {
+    display: none;
+    text-align: center;
+}
+#correoMensaje{
+    color: rgb(255, 255, 255);
+}
+.mensaje {
+    font-size: 24px;
+    font-weight: bold;
+    color: #11db40;
+    display: none;
+}
+
+/* Mostrar el mensaje después de 3s */
+.logo.fin + .mensaje {
+    display: block;
+}
+@keyframes expandir {
     from {
         width: 0;
     }
     to {
         width: 25%;
+    }
+}
+@keyframes expandir2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+@keyframes expandir3 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 75%;
+    }
+}
+@keyframes expandir4 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
     }
 }

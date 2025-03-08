@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proceso 3</title>
+    <link rel="icon" type="image/png" href="fotos/enelpueblo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Lacquer&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilocompra.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="centrar">
+        <div class="padre">
+        </div>
+        <img src="fotos/LOGO-JARFA-250x.png" alt="" class="logo">
+       
+        <div class="containerbarra">
+            <div class="bar4"></div>
+        </div>
+        <img src="iconos/semicircle.png" class="gira" id="gira" alt="Cargando...">
+        <h1 class="mensaje" id="mensaje">COMPRA REALIZADA CON ÉXITO</h1>
+        <p id="correoMensaje">Revise su correo electrónico</p>
+        <a href="tienda.html" class="btn btn-danger" id="volverBtn">VOLVER</a></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        setTimeout(() => {
+            document.getElementById('gira').style.display = 'none';
+            document.getElementById('mensaje').style.display = 'block';
+        }, 5000);
+
+        setTimeout(() => {
+            document.getElementById('correoMensaje').style.display = 'block';
+            document.getElementById('volverBtn').style.display = 'inline-block';
+        }, 5000);
+    </script>
+</body>
+</html>
