@@ -110,6 +110,40 @@ body{
 .logo.fin + .mensaje {
     display: block;
 }
+@media screen and (max-width: 767px) {
+    .centrar{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .container{
+        width: 70% !important;
+    }
+    .card{
+        width: 100% !important;
+    }
+    .cesta{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .centrar{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .container{
+        width: 70% !important;
+    }
+    .card{
+        width: 90% !important;
+        margin: 5% !important;
+    }
+    .cesta{
+        width: 100% !important;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 @keyframes expandir {
     from {
         width: 0;

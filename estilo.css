@@ -122,11 +122,12 @@ a{
 .contenedorsubindice{
 background-color: black;
 background: linear-gradient(rgba(0, 0, 0, 0.397), rgb(0, 0, 0)), 
-url(iconos/puno-americano.png);
+url(fotos/PIEDRALAVES.jpg);
+background-size: cover;
 color: white;
 display: block;
 margin: 0 auto;
-width: 70%;
+width: 100%;
 
 }
 .titsubindice{
@@ -136,6 +137,7 @@ width: 70%;
 }
 .psubindice{
 text-align: center;
+padding: 30px;
 }
 /*footer*/
 footer{
@@ -481,9 +483,12 @@ width: 18rem;
 .contenedorsubprenda{
   background-color: black;
   display: grid;
+  margin-left: 20%;
   padding-top: 2%;
   padding-bottom: 2%;
+  width: 70%;
   grid-template-columns: repeat(2, 1fr);
+  background-color: #9f9f9f;
 }
 .descripcion{
   background-color: #666666;
@@ -497,9 +502,12 @@ width: 18rem;
   font-weight: 400;
   font-style: normal;
   font-size: 140%;
+  border-radius: 20px !important;
+  width: 90%;
 }
 .h1descripcion{
   background-color: #666666;
+  border-radius: 20px;
 }
 .pdescripcion{
 text-align: left;
@@ -522,8 +530,14 @@ padding: 2%;
 
 /*RESPONSIVES Y DEMAS ------------HOME----LOG*/
 /*MONITORES*/
-@media screen and (min-width: 1025px) {
-
+@media screen and (min-width: 1024px) and (max-width: 1561px) {
+.carousel.slide{
+  width: 100%;
+  margin-left: 0%;
+}
+.contenedorsubindice{
+  margin-bottom: 550px;
+}
 }
 
 /*TABLETS*/
@@ -606,13 +620,13 @@ width: 60%;
   grid-template-columns: repeat(2, 1fr);
 }
 .carousel.slide{
-  width: 80%;
-  margin-left: 20%;
+  width: 87%;
+  margin-left: 15%;
  }
 .descripcion2{
   background-color: #666666;
   color: white;
-  margin-right: 50%;
+  margin-right: 35%;
   text-align: center;
   display: flex;
   flex-direction: column;
