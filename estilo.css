@@ -159,10 +159,10 @@ footer{
 /*DISCOS*/
 .container-fluid.justify-content-center {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  justify-content: center; 
+  align-items: center; 
   height: 820px; 
-  gap: 20px; /* Espaciado entre los elementos */
+  gap: 20px; 
 }
 .nav-link.dropdown-toggle{
 color: red;
@@ -289,7 +289,7 @@ width: 40%;
 .bodycontacto{
   background-color: #000000;
   background: linear-gradient(rgba(0, 0, 0, 0.397), rgb(0, 0, 0)), 
-  url(fotos/team.webp);
+  url(fotos/barriochungo1.jpg);
   background-size: cover;
 }
 .contenedorcontacto{
@@ -413,10 +413,11 @@ font-weight: bolder;
   background-color: #000000;
   margin-top: 5%;
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   justify-content: center;
   align-items: center; 
-  width: 90%;
+  width: 100%;
   max-width: 950px;
 }
 .formloguin{
@@ -610,7 +611,18 @@ width: 60%;
   .der{
     display: none;
   }
-  
+  .log {
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    border: none;
+  }
+  .izqlog{
+    display: none;
+    }
+  .derlog{
+    width: 100% !important;
+  }
+
 /*SUBPAGINA PRENDAS*/
 .prendas{
   margin-left: 20%;
