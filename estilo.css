@@ -276,6 +276,7 @@ color: white;
   font-weight: 400;
   font-style: normal;
   font-size: 170%;
+  margin-top: 30px;
 }
 .discocompleto:hover{
   background-color:rgb(255, 121, 121);
@@ -340,8 +341,6 @@ width: 40%;
 }
 /*CONCIERTOS*/
 .gradiante{
-  background: rgb(255,0,0);
-  background: radial-gradient(circle, rgb(150, 0, 0) 0%, rgba(0,0,0,1) 58%);
 }
 .container-fluid.mt-5.concis{
 }
@@ -359,12 +358,10 @@ width: 40%;
 
 }
 .card-title{
-  margin-left: 2.5%;
 }
 .card{
   background-color: rgb(224, 224, 224) !important;
   border: none !important;
-margin-bottom: 40px;
 }
 .card-header{
   background-color: none !important;
@@ -384,14 +381,15 @@ font-weight: bolder;
   width: auto;
   size: cover;
   margin: 0;
-  width: 85%;
+  width: 50%;
+  min-width: 200px;
+  background-color: #000000 !important;
 }
 .comprar{
   background-color: #FF3F3F !important;
   border: none !important;
   width: auto;
   float: right;
-  padding: 2% !important;
 }
 .comprar:hover{
   background-color: #5f0000 !important;
@@ -526,6 +524,10 @@ padding: 2%;
 }
 .pagar{
 }
+
+.prenda{
+  margin-bottom: 20px;
+}
 /*FOOTER*/
 .iconofooter{
   background-color: white;
@@ -542,7 +544,12 @@ padding: 2%;
 .contenedorsubindice{
 }
 }
-
+.custom-card.conci {
+  width: 50%;
+  display: flex;
+  align-items: stretch; 
+  margin-left: 25%;
+}
 /*TABLETS*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /*disco-subdisco*/
@@ -589,6 +596,9 @@ width: 60%;
   font-style: normal;
   font-size: 140%;
 }
+.img-container img {
+  display: none;
+}
 }
 
 /*MOVILES*/
@@ -613,16 +623,26 @@ width: 60%;
   }
   .log {
     grid-template-columns: repeat(1,1fr);
-    width: 100%;
+    width: 100% !important;
     border: none;
   }
   .izqlog{
     display: none;
     }
+    .centra{
+      margin-left: 20%;
+      width: 80%;
+    }
   .derlog{
     width: 100% !important;
+    margin-left: 20% !important;
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
-
+  .img-container img {
+    display: none;
+  }
 /*SUBPAGINA PRENDAS*/
 .prendas{
   margin-left: 20%;
