@@ -121,14 +121,13 @@ a{
 /*subindice*/
 .contenedorsubindice{
 background-color: black;
-background: linear-gradient(rgba(0, 0, 0, 0.397), rgb(0, 0, 0)), 
-url(fotos/PIEDRALAVES.jpg);
+/*
+background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.67)), 
+url(fotos/matanzatexas.jpg);*/
 background-size: cover;
 color: white;
 display: block;
-margin: 0 auto;
 width: 100%;
-
 }
 .titsubindice{
   text-align: center;
@@ -137,13 +136,12 @@ width: 100%;
 }
 .psubindice{
 text-align: center;
-padding: 30px;
+padding: 50px;
 }
 /*footer*/
 footer{
   color: white !important;
   background-color: #000000;
-  border-top: 3px red solid;
   margin-top: 10%;
   text-align: center ;
   margin-bottom: 0;
@@ -527,7 +525,12 @@ padding: 2%;
 }
 .pagar{
 }
-
+/*FOOTER*/
+.iconofooter{
+  background-color: white;
+  width: 4%;
+  border-radius: 500px;
+}
 /*RESPONSIVES Y DEMAS ------------HOME----LOG*/
 /*MONITORES*/
 @media screen and (min-width: 1024px) and (max-width: 1561px) {
@@ -536,7 +539,6 @@ padding: 2%;
   margin-left: 0%;
 }
 .contenedorsubindice{
-  margin-bottom: 550px;
 }
 }
 
@@ -553,7 +555,9 @@ width: 60%;
 .izq{
   width: 60%;
 }
-
+.iconofooter{
+  width: 6%;
+}
 /*prendas*/
 .prendas{
   grid-template-columns: repeat(2,1fr);
@@ -606,6 +610,7 @@ width: 60%;
   .der{
     display: none;
   }
+  
 /*SUBPAGINA PRENDAS*/
 .prendas{
   margin-left: 20%;
@@ -655,5 +660,8 @@ width: 60%;
   .formcontacto{
     width: 90%;
     padding: 5%;
+  }
+  .iconofooter{
+    width: 10%;
   }
 }
