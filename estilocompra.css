@@ -106,7 +106,6 @@ body{
     display: none;
 }
 
-/* Mostrar el mensaje después de 3s */
 .logo.fin + .mensaje {
     display: block;
 }
